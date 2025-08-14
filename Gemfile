@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 8.0.2"
+gem "rails", "~> 8.0.2", ">= 8.0.2.1"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
 # Use postgresql as the database for Active Record
@@ -55,12 +55,3 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 end
-gem 'rspec-rails', group: [ :test ]
-gem 'rails-controller-testing', group: [ :test ]
-
-# Gemfile
-gem "bootstrap", "~> 5.2"
-gem "autoprefixer-rails"
-gem "font-awesome-sass", "~> 6.1"
-gem "simple_form"
-gem "sassc-rails" 
