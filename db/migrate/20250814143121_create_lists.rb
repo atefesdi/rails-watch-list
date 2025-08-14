@@ -1,7 +1,7 @@
-class CreateLists < ActiveRecord::Migration[8.0]
+class CreateLists < ActiveRecord::Migration[7.1]
   def change
     create_table :lists do |t|
-      t.string :name
+      t.text :name
 
       t.timestamps
     end
