@@ -1,3 +1,11 @@
+<h1>My Lists</h1>
 
+<ul>
+  <% @lists.each do |list| %>
+    <li>
+      <%= link_to list.name, list_path(list) %>
+    </li>
+  <% end %>
+</ul>
 
-<h1>Watch list</h1>
+<%= link_to "Create a new list", new_list_path %>

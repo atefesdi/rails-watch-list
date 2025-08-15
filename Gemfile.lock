@@ -413,6 +413,7 @@ DEPENDENCIES
   font-awesome-sass (~> 6.1)
   importmap-rails
   jbuilder
+  json (~> 2.13)
   kamal
   pg (~> 1.1)
   propshaft

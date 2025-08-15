@@ -11,4 +11,20 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  # resources :lists, only: [:index, :show, :new, :create]
+
+
+  ####  boomark ####
+  # get "lists/:list_id/bookmarks",
+
+  #####  lists  #####
+
+  get "lists/new", to: "lists#new", as: :new_list
+  post "lists", to: "lists#create"
+
+  get "lists/:id", to: "lists#show", as: :list
+
+  get "lists", to: "lists#index"
+
+  root "lists#index"
 end
